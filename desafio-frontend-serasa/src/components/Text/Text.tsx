@@ -27,11 +27,9 @@ export const Text = forwardRef<HTMLHeadingElement, TextProps>(
 
     return (
       <Tag
-        className={`
-            ${styles.text} 
-            ${styles[`text--${size ?? "body"}`]}
-            ${bold ? styles["text--bold"] : ""}
-        `}
+        className={`${styles.text} ${styles[`text--${size ?? "body"}`]} ${
+          bold ? styles["text--bold"] : ""
+        }`}
         ref={ref}
         {...rest}
       >
