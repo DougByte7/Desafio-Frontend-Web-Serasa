@@ -1,0 +1,72 @@
+.text {
+  font-size: var(--text_font_size, 1rem);
+  line-height: var(--text_line_height, 24px);
+  font-weight: var(--text_font_weight, normal);
+  letter-spacing: var(--text_letter_spacing, initial);
+}
+
+@media screen and (min-width: 426px) {
+  .text {
+    font-size: var(--text_font_size_dt, 1rem);
+    line-height: var(--text_line_height_dt, 24px);
+  }
+}
+
+.text--bold {
+  --text_font_weight: bold;
+}
+
+.text--display {
+  --text_font_size: 2.5rem;
+  --text_line_height: 44px;
+  --text_font_size_dt: 3rem;
+  --text_line_height_dt: 50px;
+  --text_letter_spacing: -1.2;
+}
+
+.text--lg {
+  --text_font_size: 2rem;
+  --text_line_height: 36px;
+  --text_font_size_dt: 2.5rem;
+  --text_line_height_dt: 44px;
+  --text_letter_spacing: -1;
+}
+
+.text--md {
+  --text_font_size: 1.5rem;
+  --text_line_height: 28px;
+  --text_font_size_dt: 2rem;
+  --text_line_height_dt: 36px;
+  --text_letter_spacing: -0.8;
+}
+
+.text--sm {
+  --text_font_size: 1.25rem;
+  --text_line_height: 24px;
+  --text_font_size_dt: 1.5rem;
+  --text_line_height_dt: 28px;
+  --text_letter_spacing: -0.6;
+}
+
+.text--xs {
+  --text_font_size: 1.125rem;
+  --text_line_height: 22px;
+  --text_font_size_dt: 1.25rem;
+  --text_line_height_dt: 24px;
+  --text_letter_spacing: initial;
+}
+
+.text--subtext {
+  --text_font_size: 1rem;
+  --text_line_height: 20px;
+  --text_font_size_dt: 1rem;
+  --text_line_height_dt: 20px;
+  --text_letter_spacing: initial;
+}
+
+.text--body {
+  --text_font_size: 1rem;
+  --text_line_height: 24px;
+  --text_font_size_dt: 1rem;
+  --text_line_height_dt: 24px;
+}
