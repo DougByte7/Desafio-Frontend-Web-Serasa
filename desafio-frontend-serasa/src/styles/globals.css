@@ -1,0 +1,16 @@
+:root {
+  --ecs_color_magenta: #e63888;
+
+  --ecs_color_dark_low: rgba(0, 0, 0, 0.44);
+  --ecs_color_dark_medium: rgba(0, 0, 0, 0.6);
+  --ecs_color_dark_high: rgba(0, 0, 0, 0.8);
+  --ecs_color_light_solid: #ffffff;
+  --ecs_color_light_high: rgba(255, 255, 255, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
