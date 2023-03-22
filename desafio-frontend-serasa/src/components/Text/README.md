@@ -1,6 +1,6 @@
 # Text
 
-Utilize este componente para exir elementos textuais.
+Utilize este componente para exibir elementos textuais.
 
 ```jsx
 <Text>Texto normal</Text>
