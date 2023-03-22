@@ -56,7 +56,7 @@
   --text_letter_spacing: initial;
 }
 
-.text--subtext {
+.text--subheading {
   --text_font_size: 1rem;
   --text_line_height: 20px;
   --text_font_size_dt: 1rem;
