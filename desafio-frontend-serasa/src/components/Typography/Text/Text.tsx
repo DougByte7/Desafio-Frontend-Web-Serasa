@@ -1,5 +1,5 @@
 import { forwardRef, ReactNode } from "react"
-import styles from "@/components/Text/Text.module.css"
+import styles from "@/components/Typography/Text/Text.module.css"
 
 export type TextSize =
   | "display"
