@@ -13,7 +13,7 @@ describe("Text", () => {
     getByText("test")
   })
 
-  it("renders a simples div with text and body styles", () => {
+  it("renders a simple div with text and body styles", () => {
     const {
       container: { firstChild },
     } = renderText(defaultProps)
