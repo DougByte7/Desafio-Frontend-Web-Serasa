@@ -1,0 +1,30 @@
+.rating {
+  border: none;
+}
+
+.rating__legend {
+  width: 0;
+  height: 0;
+  font-size: 0;
+}
+
+.rating__label svg {
+  height: 32px;
+  width: 32px;
+  fill: var(--ecs_color_dark_low);
+  transition: fill 100ms;
+}
+
+.rating__stars {
+  display: flex;
+  gap: 4px;
+}
+
+.rating__star {
+  appearance: none;
+}
+
+.rating__star:is(:hover, :focus, :checked) + .rating__label svg,
+.rating__label--active svg {
+  fill: var(--ecs_color_magenta);
+}
