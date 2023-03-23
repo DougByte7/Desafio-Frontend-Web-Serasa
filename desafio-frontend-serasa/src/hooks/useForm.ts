@@ -30,7 +30,9 @@ const useForm = <Values = Record<string, unknown>>(formData: {
   function from(key: keyof typeof values) {
     return {
       value: values[key],
-      onChange: (event: ChangeEvent<HTMLInputElement>) => {
+      onChange: (
+        event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+      ) => {
         setValues((values) => ({ ...values, [key]: event.currentTarget.value }))
       },
     }
