@@ -84,7 +84,7 @@ export default function Home() {
           <Rating value={form.values.stars} onChange={handleChangeRating} />
           <form className={styles.form} onSubmit={handleSubmitFeedback}>
             <TextInput
-              label="Nome*"
+              label="Nome"
               name="name"
               {...form.from("name")}
               required

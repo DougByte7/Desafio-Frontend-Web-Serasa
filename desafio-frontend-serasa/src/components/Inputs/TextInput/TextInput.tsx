@@ -11,7 +11,10 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
     return (
       <Text bold>
         <label className={styles["text-input"]}>
-          {label}
+          <span>
+            {label}
+            {rest.required && <span aria-hidden="true">*</span>}
+          </span>
           <input
             className={styles["text-input__input"]}
             ref={ref}
