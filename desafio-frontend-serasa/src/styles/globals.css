@@ -1,5 +1,6 @@
 :root {
   --ecs_color_magenta: #e63888;
+  --ecs_color_success: #00ba72;
 
   --ecs_color_dark_low: rgba(0, 0, 0, 0.44);
   --ecs_color_dark_medium: rgba(0, 0, 0, 0.6);
