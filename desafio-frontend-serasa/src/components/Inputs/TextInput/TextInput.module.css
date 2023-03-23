@@ -1,0 +1,17 @@
+.text-input {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+}
+
+.text-input__input {
+  border-radius: var(--ecs_border_radius_sm);
+  border: 1px solid var(--ecs_border_color);
+  padding: 8px 12px;
+  width: 280px;
+}
+
+.text-input__input:focus {
+  outline-color: var(--ecs_color_magenta);
+}
