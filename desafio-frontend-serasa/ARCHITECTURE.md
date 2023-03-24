@@ -73,7 +73,7 @@ graph TD;
     API-Data-->Page-1;
     API-Data-->Page-2;
     Page-1 --> UI-1 --> Business-logic-1
-    Page-2 --> Business-logic-2--> UI-2
+    Page-2 --> Business-logic-2 --> UI-2
 ```
 
 +A página 1 segue as a restrição corretamente, pois cada camada depende uma mais interna
