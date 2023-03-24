@@ -68,10 +68,9 @@ No seguinte diagrama
 
 ```mermaid
 graph TD;
-    graph TD;
-    Router-->API-Data;
-    API-Data-->Page-1;
-    API-Data-->Page-2;
+    Router --> API-Data;
+    API-Data --> Page-1;
+    API-Data --> Page-2;
     Page-1 --> UI-1 --> Business-logic-1
     Page-2 --> Business-logic-2 --> UI-2
 ```
