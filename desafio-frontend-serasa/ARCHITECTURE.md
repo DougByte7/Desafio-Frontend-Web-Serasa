@@ -44,16 +44,16 @@ As responsabilidades do código devem ser divididas, isto é, deve haver separa�
 
 Atores são uma forma de gerenciar maquinas de estado através de mensagens.
 No contexto web em uma página de demande alta performance pois necessita de realizar computação complexas no lado frontend, o código responsável pela UI pode ser o único a ser executado na thread principal, todo resto como lógicas de negócio, data fetching, entre outros, podem ser executados via web workers que rodam fora da thread principal de forma verdadeiramente assíncrona. O uso de atores nesse contexto facilitaria muito a comunicação entre as camadas.
-Segue uma (talk)[https://youtu.be/Vg60lf92EkM] que se aprofunda um pouco mais nessa abordagem
+Segue uma [talk](https://youtu.be/Vg60lf92EkM) que se aprofunda um pouco mais nessa abordagem
 
 ## Arquitetura
 
 ### Geral
 
 Visando a descentralização e liberdade tecnológica das equipes em minha opinião uma arquitetura de micro frontend, é a melhor opção.
-Exitem diversas abordagens e definições para tal como apresentado por (Luca Mezzalira)[https://www.youtube.com/watch?v=BuRB3djraeM] em uma de suas apresentações.
+Exitem diversas abordagens e definições para tal como apresentado por [Luca Mezzalira](https://www.youtube.com/watch?v=BuRB3djraeM) em uma de suas apresentações.
 
-Os microfronts podem ser a nível de componente, por exemplo, uma única página pode ser composta de N diferentes repositórios controlados por diferentes equipes e tecnologias. Nesse caso é necessário a implementação de uma camada de comunicação baseada em (mensagens)[https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage] e uma maior comunicação entre os time envolvidos para coordenar os contratos de comunicação.
+Os microfronts podem ser a nível de componente, por exemplo, uma única página pode ser composta de N diferentes repositórios controlados por diferentes equipes e tecnologias. Nesse caso é necessário a implementação de uma camada de comunicação baseada em [mensagens](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) e uma maior comunicação entre os time envolvidos para coordenar os contratos de comunicação.
 
 Os microfronts também podem ser aplicações completas separadas por um escopo de time, por exemplo, um microfront para a página de inicial, outro para finanças, etc..., a princípio essa é a abordagem que recomendo, pois precisa de apenas uma aplicação "pai" para fazer os apontamentos/proxy para direcionar o usuário para a aplicação correta, e os times podem trabalhar de forma mais independente.
 
