@@ -75,8 +75,9 @@ graph TD;
     Page-2 --> Business-logic-2 --> UI-2
 ```
 
-+A página 1 segue as a restrição corretamente, pois cada camada depende uma mais interna
--Enquanto a página 2 fere a restrição, pois a camada de regras de negócio não deve se importar com como a interface é gerada.
++ A página 1 segue as a restrição corretamente, pois cada camada depende uma mais interna
+
+- Enquanto a página 2 fere a restrição, pois a camada de regras de negócio não deve se importar com como a interface é gerada.
 
 O benefício desta restrição é facilitar o isolamento de mudanças de impacto, tornando a aplicação resiliente e menos suscetível a erros, tornando a etapa de QA mais simples.
 
